@@ -1,7 +1,7 @@
 import sys
 import socket
 import threading
-from train_worker import Message_size,MAX_RECV_SIZE,test_time
+from robot import Message_size,MAX_RECV_SIZE,test_time
 
 def train(ps_ip,ps_port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
