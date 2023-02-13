@@ -5,7 +5,7 @@ import numpy as np
 import pickle
 #import zmq
 
-Message_size=6731196*4
+Message_size=3195008
 MAX_RECV_SIZE = 4*1024
 test_time = 10
 
@@ -19,6 +19,7 @@ def train_worker(ps_ip, ps_port):
     while(i<test_time):
         time.sleep(1.2)
         buffer = bytearray()
+        print("start send")
         start=time.time()
         tcpsock.send(bytes(Message_size))
         while len(buffer) < Message_size:
