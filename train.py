@@ -7,7 +7,7 @@ def train(ps_ip,ps_port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     sock.bind((ps_ip, ps_port))
-    sock.listen()
+    sock.listen(1)
     lock=threading.Lock()
     while(True):
         buffer = bytearray()

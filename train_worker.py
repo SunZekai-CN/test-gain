@@ -9,7 +9,7 @@ Message_size=6731196*4
 MAX_RECV_SIZE = 4*1024
 test_time = 10
 
-def train_worker(ps_ip, ps_port,transport,offset):
+def train_worker(ps_ip, ps_port):
     tcpsock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     tcpsock.connect((ps_ip, ps_port))
     
