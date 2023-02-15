@@ -3,7 +3,7 @@ import socket
 import time
 import numpy as np
 
-Message_size=8635260
+Message_size=17465608
 MAX_RECV_SIZE = 4*1024
 test_time = 10
 
