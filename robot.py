@@ -25,7 +25,7 @@ def train_worker(ps_ip, ps_port):
         end=time.time()
         network_waiting.append(end-start)
         print(f'iteration {i} {network_waiting[-1]},get {len(buffer)} bytes,{len(buffer)/1024/1024}MB ', flush=True)
-        print(f"average {np.mean(network_waiting)}",flush=True)
+        print(f"average {np.mean(network_waiting)/2}",flush=True)
         i = i+1
     
 if __name__ == '__main__':
