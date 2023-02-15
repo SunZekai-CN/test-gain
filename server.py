@@ -1,7 +1,7 @@
 import sys
 import socket
 
-Message_size=312646
+Message_size=8635260
 MAX_RECV_SIZE = 4*1024
 test_time = 10
 
