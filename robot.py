@@ -2,8 +2,6 @@ import sys
 import socket
 import time
 import numpy as np
-import pickle
-#import zmq
 
 Message_size=3195008
 MAX_RECV_SIZE = 4*1024
