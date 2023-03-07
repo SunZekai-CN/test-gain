@@ -6,8 +6,8 @@ RUN python3 -m pip install --upgrade pip
 
 RUN apt-get install -y build-essential libxmu-dev libxi-dev libgl-dev libosmesa-dev liblog4cplus-dev curl
 WORKDIR /home
-RUN git clone https://github.com/SunZekai-CN/GPU_offload_stable.git
-RUN cd GPU_offload_stable && mkdir build && cd build && export GVIRTUS_HOME=/opt/GVirtuS && cmake .. && make && make install
+RUN git clone https://github.com/SunZekai-CN/transparent_offload_cuda.git
+RUN cd transparent_offload_cuda && mkdir build && cd build && export GVIRTUS_HOME=/opt/GVirtuS && cmake .. && make && make install
 
 
 WORKDIR /work
